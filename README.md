@@ -4,6 +4,10 @@ This is a machine learning web application that predicts the salary of software 
 
 The project includes data manipulation using NumPy and Pandas to create an appropriate data frame for the machine learning model. The DecisionTreeRegressor model is used to train the model, with the best value estimator obtained from GridSearchCV. The serialized model is saved using Pickle for future predictions.
 
+DecisionTreeRegressor is a machine learning model that uses a tree structure to model the relationships between the input features and the target variable (salary in this case). It works by splitting the data based on the values of the input features to create a set of decision rules that predict the target variable. The hyperparameters of the DecisionTreeRegressor model (such as max_depth and min_samples_split) can significantly affect its performance. Therefore, it's essential to tune these hyperparameters to find the optimal set of values for the given dataset.
+
+GridSearchCV is a hyperparameter tuning technique that exhaustively searches for the best set of hyperparameters from a predefined set of values. In this project, GridSearchCV is used to find the optimal hyperparameters for the DecisionTreeRegressor model by testing a range of values for max_depth and min_samples_split. The best value estimator obtained from GridSearchCV is then used to train the model.
+
 This project provides an efficient and accurate way for software developers to estimate their salaries based on their qualifications and location. The open-source code and documentation can be found in this repository, along with the necessary files to run the web application.
 
 Screen shots of web application are as follows,
